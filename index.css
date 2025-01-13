@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+/* About 섹션 */
+.about {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 4rem;
+  padding: 2.5rem;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.photo {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #e0e0e0;
+  flex-shrink: 0;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.name {
+  flex: 1;
+}
+
+.ko-name {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+  font-weight: 700;
+}
+
+.eg-name {
+  font-size: 1.8rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.detail h3 {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0.7rem;
+  font-weight: normal;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* What I Do 섹션 */
+.whatIDO {
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.skills,
+.experience {
+  display: flex;
+  flex-direction: column;
+}
+
+.skills h2,
+.experience h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.sk-box {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.sk-box img {
+  width: 120px;
+  height: 100px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+  filter: grayscale(20%);
+}
+
+.sk-box img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0%);
+}
+
+/* Experience 섹션 */
+.experience {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.ex-box {
+  background-color: white;
+  padding: 1.8rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.ex-box:hover {
+  transform: translateY(-5px);
+}
+
+.ex-box h4:first-child {
+  color: #2196f3;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.ex-box h4:last-child {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 600;
+}
+
+/* Awards 섹션 */
+.awards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.award-box {
+  background-color: white;
+  padding: 1.8rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.award-box:hover {
+  transform: translateY(-5px);
+}
+
+.award-box h4:first-child {
+  color: #4caf50;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.award-box h4:last-child {
+  font-size: 1.3rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.project {
+  margin-bottom: 4rem;
+}
+
+.project h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.project-container {
+  display: grid;
+  gap: 2rem;
+}
+
+.pro-box {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  margin-top: 10px;
+}
+
+.pro-box:hover {
+  transform: translateY(-3px);
+}
+
+.project-title {
+  font-size: 1.4rem;
+  color: #682059;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.info-item {
+  display: flex;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.info-item .label {
+  flex-shrink: 0;
+  font-weight: 500;
+  color: #666;
+  position: relative;
+}
+
+.info-item .content {
+  color: #333;
+  line-height: 1.5;
+}
+
+.info-item a {
+  text-decoration: none;
+  color: #333;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1024px) {
+  .whatIDO {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
+  }
+
+  .photo {
+    width: 150px;
+    height: 150px;
+  }
+
+  .ko-name {
+    font-size: 2.2rem;
+  }
+
+  .eg-name {
+    font-size: 1.6rem;
+  }
+
+  .detail h3 {
+    justify-content: center;
+  }
+  .info-item {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .info-item .label {
+    width: auto;
+  }
+
+  .info-item .label::after {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 1rem;
+  }
+
+  .about {
+    padding: 1.5rem;
+  }
+
+  .sk-box {
+    padding: 1.5rem;
+  }
+
+  .sk-box img {
+    width: 80px;
+    height: 70px;
+  }
+
+  .ex-box,
+  .award-box {
+    padding: 1.2rem;
+  }
+
+  .pro-box {
+    padding: 1.5rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+}
