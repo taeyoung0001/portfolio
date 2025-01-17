@@ -42,6 +42,12 @@ body {
 .name {
   flex: 1;
 }
+.name a {
+  text-decoration: none;
+}
+.name a h3 {
+  font-weight: 800;
+}
 
 .ko-name {
   font-size: 2.5rem;
@@ -150,10 +156,18 @@ body {
 
 /* Awards 섹션 */
 .awards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.awards h2 {
+  text-align: start;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-size: 1.8rem;
+  font-weight: 600;
+  padding-left: 6px;
 }
 
 .award-box {
@@ -186,11 +200,12 @@ body {
 }
 
 .project h2 {
-  text-align: center;
+  text-align: start;
   margin-bottom: 1.5rem;
   color: #333;
   font-size: 1.8rem;
   font-weight: 600;
+  padding-left: 2px;
 }
 
 .project-container {
@@ -213,7 +228,7 @@ body {
 
 .project-title {
   font-size: 1.4rem;
-  color: #682059;
+  color: #8864ff;
   margin-bottom: 1.5rem;
   font-weight: 600;
 }
@@ -245,6 +260,39 @@ body {
 .info-item a {
   text-decoration: none;
   color: #333;
+}
+.hide {
+  display: none;
+}
+.personalContainer {
+  display: none;
+  transition: 1s ease-in-out;
+}
+.btnBox {
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+button {
+  padding: 10px;
+  border: none;
+  background-color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 14px;
+  font-weight: 600;
+  transition: 0.4s ease-in-out;
+}
+
+button:hover {
+  background-color: #8864ff;
+  transform: scale(1.1);
+}
+.centerH2 {
+  text-align: center;
+  text-transform: uppercase;
 }
 
 /* 반응형 디자인 */

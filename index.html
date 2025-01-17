@@ -13,7 +13,7 @@
   <body>
     <div class="about">
       <div class="photo">
-        <img src="" alt="" />
+        <img src="./public/1.jpg" alt="" />
       </div>
       <div class="name">
         <h2 class="ko-name">허태영</h2>
@@ -22,7 +22,9 @@
           <h3>1995.02.02</h3>
           <h3>+82 010-7150-5703</h3>
           <h3>her020212@naver.com</h3>
-          <h3>https://github.com/taeyoung0001</h3>
+          <a href="https://github.com/taeyoung0001"
+            ><h3>https://github.com/taeyoung0001</h3></a
+          >
         </div>
       </div>
     </div>
@@ -45,65 +47,102 @@
       <div class="experience">
         <h2>MY EXPERIENCE</h2>
         <div class="ex-box">
-          <h4>2021.11 ~ 2023.01</h4>
+          <h4>2021.11 ~ 2024.01</h4>
           <h4>KTCS Customer Service 교육 강사</h4>
         </div>
         <div class="ex-box">
-          <h4>2023.06 ~ 2024.12</h4>
+          <h4>2024.06 ~ 2024.12</h4>
           <h4>모두의 연구소 오름 부트캠프 수료(프론트엔드 과정)</h4>
         </div>
         <div class="ex-box">
-          <h4>2023.12 ~ 2024.12</h4>
-          <h4>모두콘2024 (Connect & Learn) 우수 교육생 연사 참여</h4>
+          <h4>2024.12 ~ 2024.12</h4>
+          <h4>모두콘2024 (Connect & Learn) 우수 교육생</h4>
         </div>
       </div>
     </div>
 
     <div class="project">
-      <div class="pro-box">
-        <h3 class="project-title">프론트엔드 과정 부트캠프 미니 프로젝트</h3>
-        <div class="project-info">
-          <div class="info-item">
-            <span class="label">연계/소속회사 :</span>
-            <span class="content">오름캠프</span>
-            <span class="content">2024.08 - 2024.09</span>
-            <span class="git">
-              <a
-                href="https://github.com/taeyoung0001/-orem-mini-project/tree/master"
+      <h2 class="centerH2">PROJECT</h2>
+      <div class="btnBox">
+        <button id="teamProjectBtn">team</button>
+        <button id="personalProjectBtn">personal</button>
+      </div>
+      <!-- 팀프로젝트 -->
+      <div class="teamContainer">
+        <div class="pro-box">
+          <h3 class="project-title">프론트엔드 과정 부트캠프 미니 프로젝트</h3>
+          <div class="project-info">
+            <div class="info-item">
+              <span class="label">연계/소속회사 :</span>
+              <span class="content">오름캠프</span>
+              <span class="content">2024.08 - 2024.09</span>
+              <span class="git">
+                <a
+                  href="https://github.com/taeyoung0001/-orem-mini-project/tree/master"
+                  >이동하기</a
+                >
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="pro-box">
+          <h3 class="project-title">프론트엔드 과정 부트캠프 1차 프로젝트</h3>
+          <div class="project-info">
+            <div class="info-item">
+              <span class="label">연계/소속회사 :</span>
+              <span class="content">오름캠프</span>
+              <span class="content">2024.09 - 2024.10</span>
+              <a href="https://github.com/taeyoung0001/-orem-project-post"
                 >이동하기</a
               >
-            </span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="pro-box">
-        <h3 class="project-title">프론트엔드 과정 부트캠프 1차 프로젝트</h3>
-        <div class="project-info">
-          <div class="info-item">
-            <span class="label">연계/소속회사 :</span>
-            <span class="content">오름캠프</span>
-            <span class="content">2024.09 - 2024.10</span>
-            <a href="https://github.com/taeyoung0001/-orem-project-post"
-              >이동하기</a
-            >
-          </div>
-        </div>
-      </div>
-      <div class="pro-box">
-        <h3 class="project-title">프론트엔드 과정 부트캠프 2차 프로젝트</h3>
-        <div class="project-info">
-          <div class="info-item">
-            <span class="label">연계/소속회사 :</span>
-            <span class="content">오름캠프</span>
+        <div class="pro-box">
+          <h3 class="project-title">프론트엔드 과정 부트캠프 2차 프로젝트</h3>
+          <div class="project-info">
+            <div class="info-item">
+              <span class="label">연계/소속회사 :</span>
+              <span class="content">오름캠프</span>
 
-            <span class="content">2024.11 - 2024.11</span>
-            <a href="https://github.com/blackandwhite-developers">이동하기</a>
+              <span class="content">2024.11 - 2024.11</span>
+              <a href="https://github.com/blackandwhite-developers">이동하기</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 개인프로젝트 -->
+      <div class="personalContainer">
+        <div class="pro-box">
+          <h3 class="project-title">나혼자 게시판 만들기</h3>
+          <div class="project-info">
+            <div class="info-item">
+              <span class="content">2025.1 - 2025.1</span>
+              <span>사용언어 : next.js </span>
+              <a href="https://github.com/taeyoung0001/react_start/tree/master"
+                >이동하기</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="pro-box">
+          <h3 class="project-title">부산어때</h3>
+          <div class="project-info">
+            <div class="info-item">
+              <span class="content">2025.1 - 2025.ing</span>
+              <span>사용언어 : next.js </span>
+              <a href="https://github.com/taeyoung0001/React-Recipe"
+                >이동하기</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="awards">
+      <h2 class="centerH2">Awards</h2>
       <div class="award-box">
         <h4>2024.10</h4>
         <h4>모두의 연구소 팀 프로젝트 최우수상</h4>
@@ -113,5 +152,7 @@
         <h4>모두의 연구소 파이널 팀 프로젝트 최우수상</h4>
       </div>
     </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
